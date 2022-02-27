@@ -37,15 +37,12 @@ for (let i = 0; i < componentsInHtmlList.length; i++) {
 	inlineCss(htmlCode, options).then((html) => {
     // Pushing processed components code to processedComponents array
 		processedComponents.push(html);
-		// Emptying the Output.html file to put new code
-    fs.writeFileSync("Output.html", "", { flag: "w" }, (err) => {
-      if (err) throw err;
-		});
-		console.log(`Putting ${processedComponents.join("")}`);
+		//! Improvement scope
+		//* I know that re-writing the Output.html file for each and every component is not the most optimized method. This code will get updated in the future
+		// Putting the final processed code of all the components to Output.html
     fs.writeFileSync(
       "Output.html",
       processedComponents.join(""),
-      { flag: "a" },
       (err) => {
         if (err) throw err;
       }

@@ -3,6 +3,7 @@
     "chokidar": "^3.5.3",
     "colors": "^1.4.0",
     "inline-css": "^3.0.0",
-    "input": "^1.0.1"
+    "input": "^1.0.1",
+    "live-server": "^1.2.1"
   }
 }

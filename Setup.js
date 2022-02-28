@@ -26,7 +26,7 @@ async function askDetails() {
       fs.mkdirSync("Components");
       console.log(colors.green(`Made Components folder`));
     }
-  } else if (task === "Create component") {
+  } else if (task == "Create component") {
     const componentName = await input.text(`Name of the component: `);
     // Creating the componentName directory inside Components
     if (!fs.existsSync(`Components/${componentName}`)) {
@@ -34,7 +34,7 @@ async function askDetails() {
       console.log(colors.green(`Made ${componentName} folder`));
       // Creating HTML files of that component
       fs.appendFile(
-        `Components/${componentName}/${componentName}.html`,
+        `Components/${componentName}/${componentName}.html`,'',
         (err) => {
           if (err) throw err;
           console.log(colors.green(`Created ${componentName}.html`));
@@ -42,14 +42,14 @@ async function askDetails() {
       );
       // Creating CSS file of that component
       fs.appendFile(
-        `Components/${componentName}/${componentName}.css`,
+        `Components/${componentName}/${componentName}.css`,'',
         (err) => {
           if (err) throw err;
           console.log(colors.green(`Created ${componentName}.css`));
         }
       );
     }
-  } else if (task === "Delete component") {
+  } else if (task == "Delete component") {
     const componentName = await input.text(`Name of the component: `);
     // Deleting the componentName directory
     fs.rmSync(`Components/${componentName}`, { recursive: true, force: true });

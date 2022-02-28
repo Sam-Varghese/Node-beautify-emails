@@ -1,14 +1,10 @@
-I'll recommend you to just have a look at this video where I've explained the working of this program: https://drive.google.com/file/d/14Q-p8rxGLUpJKk-gIi93d_o--G5E3fji/view?usp=sharing
+Kindly checkout this video for a detailed explanation of this application: https://drive.google.com/file/d/1ZIJ8dnI1pmhsMXD7k1_HeUV5dr0FnEEI/view?usp=sharing
 
-- To install all necessary packages, and make required folders, do as follows:
-1. Just execute the Setup.js program, and run the 1st and 2nd option.
+Greetings of the day!
+Today we're going to see how to use this applications.
 
-- Now that we've installed imp packages, code the component we generated.
-- Now register this component in the prototype.txt
-- Now start the compiler...
-- We've made a component, and are also able to view it in the browser.
-- Now the final email-suitable code is there in Output.html
-- Copy that code 
-- Paste the code after editing the gmail component as html
-- Now our mail also has the same look!
-- Thanks for watching! have a great day 👋👋
+- So firstly, fork the repo., clone it and go to the Setup.js file to install and setup the project.
+- This is it, after setup, just move to compiler.js to start the compiler.
+- Just be sure you add the component to prototype.txt, and then start the compiler.
+- Now, the output appears in Output.html
+- We got the mail, thanks for watching! have a great day!

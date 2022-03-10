@@ -1,6 +1,5 @@
+*.txt
 /node_modules
 /rough
 /Components
 tempCodeRunnerFile.js
-Prototype.txt
-Output.html

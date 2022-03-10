@@ -19,15 +19,15 @@ Kindly checkout this video for a detailed explanation of this application: https
 flowchart TB;
 
 fork(Fork the repository) --> clone(Clone the forked repo.)
-clone --> setup(Execute Setup.js)
+clone --> setup(Execute <a href = 'https://github.com/Sam-Varghese/Node-beautify-emails/blob/e8bada47d0c82dd9ac7938c1f8f25506ed407f54/Setup.js'>Setup.js</a>)
 setup --> firstSetup(Execute first time setup option. 1st option)
 firstSetup --> createComp(Now create a new component. 2nd option)
-createComp --> checkCompFolder(Go to Component folder)
+createComp --> checkCompFolder(Go to <a href='https://github.com/Sam-Varghese/Node-beautify-emails/blob/e6cf49ce1d95fa82ec4e216ec5b165c2ba5641eb/Components'>Components folder</a>)
 checkCompFolder --> comp("Go to the component folder (Inside ./Components) you generated recently")
-comp --> startServer(Start Compiler/Compiler.js)
+comp --> startServer(Start <a href = 'https://github.com/Sam-Varghese/Node-beautify-emails/blob/e2c48cf440e1041c7e37080bc02e1ed2b212db78/Compiler/Compiler.js'>Compiler/Compiler.js</a>)
 startServer --> editHtml(Edit <Component>.html file)
 editHtml --> editCss(Edit <Component>.css file)
-editCss --> checkWebpage(Check http://127.0.0.1:8080/)
+editCss --> checkWebpage(Check <a href = 'http://127.0.0.1:8080/'>http://127.0.0.1:8080/</a>)
 checkWebpage --> editHtml
 checkWebpage --> output(Output generated in Output.html)
 ```

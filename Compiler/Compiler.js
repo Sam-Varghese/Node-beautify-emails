@@ -97,7 +97,11 @@ function processEmailTemplate() {
                     throw err;
                 }
             });
-          console.log(colors.red(`No css content detected in ${componentsInHtmlList[i]}`))
+            console.log(
+                colors.red(
+                    `No css content detected in ${componentsInHtmlList[i]}`
+                )
+            );
             console.log(colors.green(`Output.html updated`));
         } else {
             inlineCss(htmlCode, options).then((html) => {

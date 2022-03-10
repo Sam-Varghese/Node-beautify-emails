@@ -36,7 +36,7 @@ async function Chowkidar() {
     // Watching over the Components folder
     chokidar.watch("Components").on("all", (event, path) => {
         // To keep the terminal clean
-        console.clear();
+        // console.clear();
         updateCount++;
         // Printing the info
         console.log(
@@ -72,7 +72,6 @@ function processEmailTemplate() {
     for (let i = 0; i < componentsInHtmlList.length; i++) {
         // Making path of all components
         let componentPath = `Components/${componentsInHtmlList[i]}/${componentsInHtmlList[i]}`;
-
         // Generating the raw html + css code by reading all component files
         var htmlCode = `<style>${fs.readFileSync(
             componentPath + ".css",
@@ -92,18 +91,20 @@ function processEmailTemplate() {
                 if (err) throw err;
             }).length == 0
         ) {
+            console.log(colors.blue(`CSS files not detected.`));
             fs.writeFileSync("Output.html", htmlCode, (err) => {
                 if (err) {
                     throw err;
                 }
             });
             console.log(
-                colors.red(
+                colors.yellow(
                     `No css content detected in ${componentsInHtmlList[i]}`
                 )
             );
             console.log(colors.green(`Output.html updated`));
         } else {
+
             inlineCss(htmlCode, options).then((html) => {
                 // Pushing processed components code to processedComponents array
                 processedComponents.push(html);

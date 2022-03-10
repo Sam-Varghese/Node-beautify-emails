@@ -1,4 +1,4 @@
-# Beautify Mails
+![Logo](logo.png)
 
 ---
 
@@ -33,4 +33,3 @@ checkWebpage --> output(Output generated in Output.html)
 ```
 
 ---
-

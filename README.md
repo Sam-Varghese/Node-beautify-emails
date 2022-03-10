@@ -2,8 +2,8 @@
 
 ---
 
-- This is an application I made in order to code beautiful mails using only HTML and CSS.
-- This application is also inspired by React js framework, hence you can split the mails too in different components, and reuse them whenever needed.
+- This is an application I made in order to code beautiful mails using only [HTML](https://www.wikiwand.com/en/HTML) and [CSS](https://www.wikiwand.com/en/CSS).
+- This application is also inspired by [React js](https://reactjs.org/) framework, hence you can split the mails too in different components, and reuse them whenever needed.
 
 ---
 
@@ -33,3 +33,4 @@ checkWebpage --> output(Output generated in Output.html)
 ```
 
 ---
+

@@ -1,8 +1,17 @@
+# Beautify Mails
+
+---
+
+- This is an application I made in order to code beautiful mails using only HTML and CSS.
+- This application is also inspired by React js framework, hence you can split the mails too in different components, and reuse them whenever needed.
+
+---
+
 Kindly checkout this video for a detailed explanation of this application: https://drive.google.com/file/d/1ZIJ8dnI1pmhsMXD7k1_HeUV5dr0FnEEI/view?usp=sharing
 
 ---
 
-# Setting the project
+## Setting the project
 
 ---
 
@@ -22,3 +31,5 @@ editCss --> checkWebpage(Check http://127.0.0.1:8080/)
 checkWebpage --> editHtml
 checkWebpage --> output(Output generated in Output.html)
 ```
+
+---

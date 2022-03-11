@@ -104,6 +104,7 @@ function processEmailTemplate() {
             );
             console.log(colors.green(`Output.html updated`));
         } else {
+            // Converting all HTML + CSS code to inline css
 
             inlineCss(htmlCode, options).then((html) => {
                 // Pushing processed components code to processedComponents array
@@ -123,6 +124,5 @@ function processEmailTemplate() {
                 console.log(colors.green(`Output.html updated`));
             });
         }
-        // Converting all HTML + CSS code to inline css
     }
 }

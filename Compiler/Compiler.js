@@ -83,7 +83,7 @@ function processEmailTemplate() {
             );
             console.log(
                 colors.yellow(
-                    `Consider removing extra lines from ./Prototype.js`
+                    `Consider removing extra empty lines from ./Prototype.js`
                 )
             );
             continue;

@@ -49,9 +49,13 @@ async function Chowkidar() {
             processEmailTemplate();
         } catch (error) {
             console.log(colors.red(error));
+            console.log(
+                colors.yellow(`Restarting the application in 1 sec...`)
+            );
+            // Restarting the application
             setTimeout(() => {
-                Chowkidar;
-            }, 3000);
+                Chowkidar();
+            }, 1000);
         }
     });
 }
@@ -70,6 +74,20 @@ function processEmailTemplate() {
 
     // Looping over all the components of prototype
     for (let i = 0; i < componentsInHtmlList.length; i++) {
+        // Skipping the execution of current loop if componentName is ''
+        if (["", " "].includes(componentsInHtmlList[i])) {
+            console.log(
+                colors.yellow(
+                    `Invalid component name detected, skipping its processing.`
+                )
+            );
+            console.log(
+                colors.yellow(
+                    `Consider removing extra lines from ./Prototype.js`
+                )
+            );
+            continue;
+        }
         // Making path of all components
         let componentPath = `Components/${componentsInHtmlList[i]}/${componentsInHtmlList[i]}`;
         // Generating the raw html + css code by reading all component files

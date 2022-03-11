@@ -28,6 +28,18 @@ async function askDetails() {
             fs.mkdirSync("Components");
             console.log(colors.green(`Made Components folder`));
         }
+        // Creating Output.html file if it does not exists.
+        fs.open(`Output.html`, "r", (error, fd) => {
+            if (error) {
+                fs.writeFile(`Output.html`, "", (err) => {
+                    if (err) throw err;
+                    console.log(colors.green(`Created Output.html`));
+                });
+                // If the file already exists
+            } else {
+                console.log(colors.yellow(`Output.html already exists 🤔`));
+            }
+        });
     } else if (task == "Create component") {
         const componentName = await input.text(`Name of the component: `);
         // Creating the componentName directory inside Components
@@ -59,6 +71,16 @@ async function askDetails() {
         fs.rmSync(`Components/${componentName}`, {
             recursive: true,
             force: true,
+        });
+        // Deleting the component from Prototype.txt if it exists
+        let prototypeData = fs.readFileSync("./Prototype.txt", "utf-8");
+        // Replacing the component name with ''
+        let updatedPrototypeData = prototypeData.replace(componentName, "");
+        fs.writeFile(`Prototype.txt`, updatedPrototypeData, (err) => {
+            if (err) throw err;
+            console.log(
+                colors.green(`Removed ${componentName} from Prototype.txt`)
+            );
         });
     }
 }

@@ -56,3 +56,38 @@ checkWebpage --> output(Output generated in Output.html)
 13. Final email compatible code will appear in [Output.html](Output.html).
 14. Copy paste this code, and *replace the element of the mail with this code*
 15. If you didn't get the above point, then kindly watch [this video](https://youtu.be/ZSSqsEVsChc)
+
+---
+
+## Advantages
+
+--- 
+
+- You can use External style sheets, hence have reusable classes, and styles.
+- You can enjoy the [react js](https://reactjs.org/) coding style for emails too.
+- Means you can split the email into components, and reuse them whenever needed.
+- The awesome [compiler](Compiler/Compiler.js) will take care of converting all CSS inline, and combining all the components.
+
+---
+
+## Contributing
+
+---
+
+- I've made [CONTRIBUTING.md](CONTRIBUTING.md) explaining how you can contribute to this project.
+- All the contributors can put their names in the readme of this project.
+- Gratitude from my side 🙂🎉
+
+---
+
+## Contributors
+
+---
+
+### Sam Varghese
+
+---
+
+![Sam Varghese's banner](https://raw.githubusercontent.com/Sam-Varghese/Sam-Varghese/main/Documents/Sam.png)
+
+- For the creation of this project, and all its maintenance.
